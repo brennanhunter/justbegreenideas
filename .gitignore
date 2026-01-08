@@ -39,7 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# videos - ignore large files
-public/videos/rain-forest-ground-view-hero.mp4
-public/videos/rainforest-hero.mp4
