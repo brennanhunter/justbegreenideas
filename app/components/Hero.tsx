@@ -13,7 +13,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/rain-forest-ground-view-hero.mp4" type="video/mp4" />
+        <source src="/videos/just-be-green-forest-floor.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
