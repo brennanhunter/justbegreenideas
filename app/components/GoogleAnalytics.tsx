@@ -3,11 +3,6 @@
 import Script from 'next/script'
 
 export default function GoogleAnalytics({ gaId }: { gaId: string }) {
-  // Only load in production
-  if (process.env.NODE_ENV !== 'production') {
-    return null
-  }
-
   return (
     <>
       <Script
@@ -22,9 +17,7 @@ export default function GoogleAnalytics({ gaId }: { gaId: string }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${gaId}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${gaId}');
           `,
         }}
       />
